@@ -37,7 +37,7 @@ The timings for rendering and telltale verification are not safety relevant, sin
     * [FSR-008] [B] The Telltale request message shall be sent every 200 ms
     * [FSR-009] [QM] Th QT app shall render the image within 70ms of the cluster controller receiving the message
     * [FSR-010] [QM] Verification of telltale shown shall be performed within 50ms
-    * [FSR-011] [B] The watchdog shall kill the backlight of the Cluster Display within 50ms, if it is not triggered within 150ms.
+    * [FSR-006] [B] The watchdog shall kill the backlight of the Cluster Display within 50ms, if it is not triggered within 150ms.
 ## Safety goal: The system shall transition to the safe state within 100ms of the display showing an unrequested telltale for longer than 100 ms
 * [Information] We need to discuss this, this might not work with the frequency of 200ms we have in SZ1, it will if we relax it a little bit to around 120ms, see
 * [FSR-012] [B] The Telltale requester shall send a request cyclically controlling whether a telltale is needed to be shown or not.
